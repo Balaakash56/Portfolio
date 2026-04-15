@@ -3,64 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bala Akash Portfolio</title>
+    <title>Bala Akash | DevOps Engineer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="remixicon.css">
+    
+    <script src="gsap.min.js"></script>
 </head>
 <body>
-    <!-- BACKGROUND MUSIC -->
-<audio id="bgMusic" loop preload="auto">
-    <source src="ambient-bg.mp3" type="audio/mpeg">
-</audio>
+    <div id="cursor"></div>
+    <canvas id="bg-canvas"></canvas>
 
-<!-- MUSIC CONTROL BUTTON -->
-<div class="music-control">
-    <button id="musicToggle" class="music-btn">🔊</button>
-</div>
-
-    <div class="clouds-bg">
-    <div class="cloud-layer clouds1"></div>
-    <div class="cloud-layer clouds2"></div>
-    <div class="cloud-layer clouds3"></div>
-    <div class="devops-logo-main"></div>
-    <div class="loading-screen" id="loading">
-        <div class="logo">LOADING...</div>
-        <div class="loader"></div>
-    
-</div>
-
-
-    
-    <nav class="nav-bar">
-        <div class="nav-logo">BURUNOLLA BALAAKASH</div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">HOME</a></li>
-            <li><a href="skills.html">SKILLS</a></li>
-            <li><a href="projects.html">PROJECTS</a></li>
-            <li><a href="experience.html">EXPERIENCE</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
-<section class="hero">
-    <div class="hero-content">
-        <!-- YOUR PROFILE IMAGE - FRONT & CENTER -->
-        <div class="profile-hero">
-            <img src="IAM.jpg" alt="B.BALAAKASH" class="profile-img">
+    <div class="portfolio-card" id="card">
+        <div class="header">
+            <div class="window-controls"><div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div></div>
+            <nav class="terminal-nav">
+                <a href="index.html">Home</a>
+                <a href="education.html">Education</a>
+                <a href="experience.html">Experience</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
+        <section id="home">
+    <div class="command">> sudo run "Introduction.sh"</div>
+    
+    <div class="profile-container">
+        <div class="profile-img-wrapper">
+            <img src="profile.jpeg" alt="Bala Akash" class="profile-pic">
+        </div>
+
+        <div class="intro-text">
+            <h1 class="typing-text" id="typewriter"></h1>
+            <p class="typing-text" id="type-line-2"></p>
+            <p class="typing-text" id="type-line-3"></p>
+        </div>
+    </div>
+</section>
         
-        <div class="hero-text">
-            <h1>B.BALAAKASH</h1>
-            <p class="hero-subtitle">DevOps Engineer | AWS Certified | Hyderabad</p>
-            <div class="hero-buttons">
-                <a href="projects.html" class="btn-primary">VIEW PROJECTS</a>
-                <a href="skills.html" class="btn-primary">VIEW PROJECTS</a>
-            
-            </div>
-        </div>
+        
     </div>
-</div>
-
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>

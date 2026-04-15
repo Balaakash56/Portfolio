@@ -3,37 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience - YourName Portfolio</title>
+    <title>Experience | Bala Akash</title>
+    <link rel="stylesheet" href="remixicon.css">
     <link rel="stylesheet" href="style.css">
+    <script src="gsap.min.js"></script>
 </head>
 <body>
-    <nav class="nav-bar">
-    <div class="nav-logo">BURUNOLLA BALAAKASH</div>
-    <ul class="nav-links">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="skills.html">SKILLS</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-        <li><a href="experience.html">EXPERIENCE</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-</nav>
+    <div id="cursor"></div>
+    <canvas id="bg-canvas"></canvas>
 
+    <div class="portfolio-card" id="card">
+        <div class="header">
+            <div class="window-controls"><div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div></div>
+            <nav class="terminal-nav">
+                <a href="index.html">Home</a>
+                <a href="education.html">Education</a>
+                <a href="experience.html"class="active-link">Experience</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="command">> tail -f work_history.log</div>
 
-    <section class="page-content">
-        <h1 class="page-title">CRIMINAL RECORD</h1>
-        
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">2024-2025</div>
-                <h3>AWS DEVOPS INTERN</h3>
-                <p>10 months building CI/CD pipelines and cloud infrastructure</p>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2025</div>
-                <h3>BTECH ELECTRICAL</h3>
-                <p>Vignan College, Hyderabad - First Division</p>
+            <div class="experience-list">
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <i class="ri-briefcase-line"></i>
+                        <div>
+                            <h4>DevOps Engineer</h4>
+                            <p>Minfy Technologies Pvt. Ltd.</p>
+                        </div>
+                        <span class="exp-date">Jan 2024 - Nov 2024</span>
+                    </div>
+                    <ul>
+                        <li>Automated infrastructure provisioning, reducing deployment time by 30%.</li>
+                        <li>Reduced system downtime by 20% through AWS CloudWatch log monitoring.</li>
+                        <li>Implemented CI/CD pipelines using Jenkins and GitHub Actions.</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <i class="ri-code-box-line"></i>
+                        <div>
+                            <h4>Java Developer (Freelancer)</h4>
+                            <p>APAAR Software</p>
+                        </div>
+                        <span class="exp-date">Jan 2023 - Mar 2023 </span>
+                    </div>
+                    <ul>
+                        <li>Developed full-stack applications using Spring Boot and MySQL.</li>
+                        <li>Implemented secure API authentication using Spring Security and JWT.</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

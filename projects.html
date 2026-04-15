@@ -3,46 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - YourName Portfolio</title>
+    <title>Projects | Bala Akash</title>
+    <link rel="stylesheet" href="remixicon.css">
     <link rel="stylesheet" href="style.css">
+    <script src="gsap.min.js"></script>
 </head>
 <body>
-    <nav class="nav-bar">
-    <div class="nav-logo">BURUNOLLA BALAAKASH</div>
-    <ul class="nav-links">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="skills.html">SKILLS</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-        <li><a href="experience.html">EXPERIENCE</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-</nav>
+    <div id="cursor"></div>
+    <canvas id="bg-canvas"></canvas>
 
-
-    <section class="page-content">
-        <h1 class="page-title">MISSIONS COMPLETED</h1>
-        
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image"></div>
-                <h3>CI/CD PIPELINE</h3>
-                <p>Automated Flask deployment with Jenkins, GitHub Actions, AWS ELB</p>
-                <div class="project-links">
-                    <a href="#" class="btn-small">GitHub</a>
-                    <a href="#" class="btn-small">DEMO</a>
+    <div class="portfolio-card" id="card">
+        <div class="header">
+            <div class="window-controls"><div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div></div>
+            <nav class="terminal-nav">
+                <a href="index.html">Home</a>
+                <a href="experience.html">Experience</a>
+                <a href="education.html">Education</a>
+                <a href="projects.html" class="active-link">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="command">> ls ./major_initiatives</div>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <h4><i class="ri-rocket-line"></i> DTDC DevOps Implementation</h4>
+                    <p>Automated ECS deployments using Docker and Terraform. Integrated AWS ECR and IAM roles for seamless scaling.</p>
                 </div>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-image"></div>
-                <h3>AWS INFRASTRUCTURE</h3>
-                <p>Scalable EC2 deployment with Elastic Load Balancer</p>
-                <div class="project-links">
-                    <a href="#" class="btn-small">Code</a>
-                    <a href="#" class="btn-small">Live</a>
+                <div class="project-item">
+                    <h4><i class="ri-git-merge-line"></i> CI/CD Pipeline Automation</h4>
+                    <p>Designed pipelines using Jenkins and GitHub Actions. Reduced manual testing effort by 40% using automated validation scripts.</p>
+                </div>
+                <div class="project-item">
+                    <h4><i class="ri-server-line"></i> Serverless Inventory System</h4>
+                    <p>Architected a serverless solution using Lambda, API Gateway, and S3. Automated the entire lifecycle via AWS CodePipeline.</p>
+                </div>
+                <div class="project-item">
+                    <h4><i class="ri-pulse-line"></i> Automated Cloud Monitoring</h4>
+                    <p>Developed infrastructure monitoring via CloudWatch and Grafana. Improved incident response time by 30%.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

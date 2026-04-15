@@ -3,54 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills - YourName Portfolio</title>
+    <title>Skills | Bala Akash </title>
+    <link rel="stylesheet" href="remixicon.css">
     <link rel="stylesheet" href="style.css">
+    <script src="gsap.min.js"></script>
 </head>
 <body>
-    <nav class="nav-bar">
-    <div class="nav-logo">BURUNOLLA BALAAKASH</div>
-    <ul class="nav-links">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="skills.html">SKILLS</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-        <li><a href="experience.html">EXPERIENCE</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-</nav>
+    <div id="cursor"></div>
+    <canvas id="bg-canvas"></canvas>
 
-
-    <section class="page-content">
-        <h1 class="page-title">SKILLS MATRIX</h1>
-        
-        <div class="skills-categories">
-            <div class="skill-category">
-                <h2>CLOUD</h2>
-                <div class="skill-bars">
-                    <div class="skill-item">
-                        <span>AWS EC2/ELB</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Docker</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
-                    </div>
-                </div>
+    <div class="portfolio-card" id="card">
+        <div class="header">
+            <div class="window-controls">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
             </div>
-            
-            <div class="skill-category">
-                <h2>CI/CD</h2>
-                <div class="skill-bars">
-                    <div class="skill-item">
-                        <span>Jenkins</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span>GitHub Actions</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 82%"></div></div>
-                    </div>
-                </div>
-            </div>
+            <nav class="terminal-nav">
+                <a href="index.html">Home</a>
+                <a href="education.html">Education</a>
+                <a href="experience.html">Experience</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html"class="active-link">Skills
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-    </section>
+
+        <div class="content">
+            <section id="skills">
+                <div class="command">> cat skills.json</div>
+                
+                <div class="skills-container">
+                    <div class="skill-tag">
+                        <i class="ri-cloud-line"></i> AWS (EC2, ECS, S3, RDS)
+                    </div>
+                    <div class="skill-tag">
+                        <i class="ri-instance-line"></i> Docker & Containers
+                    </div>
+                    <div class="skill-tag">
+                        <i class="ri-code-s-slash-line"></i> Terraform (IaC)
+                    </div>
+                    <div class="skill-tag">
+                        <i class="ri-git-branch-line"></i> Jenkins & GitHub Actions
+                    </div>
+                    <div class="skill-tag">
+                        <i class="ri-terminal-box-line"></i> Linux Administration
+                    </div>
+                    <div class="skill-tag">
+                        <i class="ri-cup-line"></i> Java & Spring Boot
+                    </div>
+                    <div class="skill-tag">
+                        <i class="ri-braces-line"></i> Python & Bash
+                    </div>
+                    <div class="skill-tag">
+                        <i class="ri-radar-line"></i> CloudWatch & Grafana
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
